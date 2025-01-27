@@ -1,6 +1,6 @@
 # Gestao-Pedidos
 
-Este é um sistema de gestão de pedidos desenvolvido em C# com o objetivo de manipular dados em um banco de dados SQL Server. Inicialmente, manipulei dados dentro do banco de dados SQL Server com o SQL Server Management Studio, criando 3 tabelas: **Clientes**, **Produtos** e **Pedidos**, que são essenciais para o desenvolvimento da API. Realizei a conexão do banco de dados, configurando o Firewall, e o SQL Server Configuration Manager, ativando o Browser e deixando o SQL Express aberto. Depois de fazer manipulções fui para Visual Studio Code para desenvolver uma API em C# com o framework ASP.NET Core. Nesse processo houve conflictos com a conexão para visualizar localmente. O projeto ainda está em desenvolvimento.
+Este é um sistema de gestão de pedidos desenvolvido em C# com o objetivo de manipular dados em um banco de dados SQL Server. Inicialmente, manipulei dados dentro do banco de dados SQL Server com o SQL Server Management Studio, criando 3 tabelas: **Clientes**, **Produtos** e **Pedidos**, que são essenciais para o desenvolvimento da API. Realizei a conexão do banco de dados, configurando o Firewall, e o SQL Server Configuration Manager, ativando o Browser e deixando o SQL Express aberto. Depois de fazer manipulções em outro sql fui para Visual Studio Code para desenvolver uma API em C# com o framework ASP.NET Core. Nesse processo houve conflictos com a conexão para visualizar localmente. O projeto ainda está em desenvolvimento.
 
 ## Estrutura do Projeto
 
