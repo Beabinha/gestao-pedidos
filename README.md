@@ -1,14 +1,14 @@
 # Gestao-Pedidos
 
-Este é um sistema de gestão de pedidos desenvolvido em C# com uma API ASP.NET Core e um frontend em AngularJS, com o objetivo de manipular dados em um banco de dados SQL Server.
+Este é um sistema de gestão de pedidos desenvolvido em C# com o objetivo de manipular dados em um banco de dados SQL Server. Inicialmente, manipulei dados dentro do banco de dados SQL Server com o SQL Server Management Studio, criando 3 tabelas: **Clientes**, **Produtos** e **Pedidos**, que são essenciais para o desenvolvimento da API. Realizei a conexão do banco de dados, configurando o Firewall, e o SQL Server Configuration Manager, ativando o Browser e deixando o SQL Express aberto. Depois de fazer manipulções fui para Visual Studio Code para desenvolver uma API em C# com o framework ASP.NET Core. Nesse processo houve conflictos com a conexão para visualizar localmente. O projeto ainda está em desenvolvimento.
 
 ## Estrutura do Projeto
 
 O projeto está dividido em três partes principais:
 
-1. **SistemaPagamento**: Contém scripts SQL para manipulação do banco de dados. Eu baixei o **SQL Server (MSSQL)** para auxiliar com a conexão da API. Utilizei o **SQL Server Management Studio (SSMS)** para manipulação do banco de dados, junto com o **SQL Server Configuration Manager**.
-2. **ApiPedido**: Contém a API desenvolvida em ASP.NET Core. A API ainda não foi completada.
-3. **PedidoAngular**: Contém o frontend desenvolvido em AngularJS. Não foi possível manipular o pedido de mudança de cor.
+1. **SistemaPagamento**: Contém scripts SQL para manipulação do banco de dados. Utilizei o **SQL Server (MSSQL)** para auxiliar com a conexão da API, e o **SQL Server Management Studio (SSMS)** para manipulação do banco de dados.
+2. **ApiPedido**: Contém a API desenvolvida em ASP.NET Core. A API ainda não foi completada, pois há conflitos nas conexões.
+3. **PedidoAngular**: Contém o frontend desenvolvido em AngularJS. Não foi possível implementar a funcionalidade de alteração de cor dos pedidos.
 
 ## Tecnologias Utilizadas
 
@@ -25,7 +25,7 @@ O projeto está dividido em três partes principais:
 
 - **SQL Server**: Utiliza o **SQL Server** para armazenar dados do sistema.
 - **Scripts SQL**: Contém scripts SQL para criar as tabelas necessárias no banco de dados.
-- **Entity Framework Core**: Configurado para comunicação entre o banco de dados e a API via **Entity Framework Core**, que realiza o mapeamento objeto-relacional.
+- **Entity Framework Core**: Configurado para comunicação entre o banco de dados e a API via **Entity Framework Core**, realizando o mapeamento objeto-relacional.
 
 ### API (ApiPedido)
 
@@ -58,7 +58,7 @@ O projeto está dividido em três partes principais:
    Certifique-se de ter o **SQL Server** instalado e configurado corretamente.
    
 2. **Criar Banco de Dados**:
-   Utilize o **SQL Server Management Studio (SSMS)** para rodar os scripts SQL incluídos no repositório para criar as tabelas e o banco de dados.
+   Utilize o **SQL Server Management Studio (SSMS)** para rodar os scripts SQL incluídos no repositório e criar as tabelas e o banco de dados.
 
 3. **Configuração de Conexão**:
    Após configurar o banco de dados, altere a string de conexão no arquivo `appsettings.json` da API para refletir a configuração do seu servidor SQL.
