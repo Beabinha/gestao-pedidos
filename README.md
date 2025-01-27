@@ -1,15 +1,31 @@
-# gestao-pedidos
-Este é um sistema de gestão de pedidos desenvolvido em C# com uma API ASP.NET Core e um frontend em AngularJS com o objetivo de manipular dados SQLSERVER.
+# Gestao-Pedidos
+
+Este é um sistema de gestão de pedidos desenvolvido em C# com uma API ASP.NET Core e um frontend em AngularJS, com o objetivo de manipular dados em um banco de dados SQL Server.
 
 ## Estrutura do Projeto
 
 O projeto está dividido em três partes principais:
 
-1. **ApiPedido**: Contém a API desenvolvida em ASP.NET Core. A api nao foi completada
-2. **PedidoAngular**: Contém o frontend desenvolvido em AngularJS. Nao foi possivel anipular o pedido de mudança de cor
-3. **SistemaPagamento**: Contém scripts SQL para manipulação do banco de dados. eu baixei o SQLSERVER (mssql) para auxiliar com a conexão da api e para manipular os dados do banco de dados usei o SQLSERVER Management Studio (SSMS) que é uma ferramenta para manipulação do banco de dados junto com Sql server configuration manager.
+1. **SistemaPagamento**: Contém scripts SQL para manipulação do banco de dados. Eu baixei o **SQL Server (MSSQL)** para auxiliar com a conexão da API. Utilizei o **SQL Server Management Studio (SSMS)** para manipulação do banco de dados, junto com o **SQL Server Configuration Manager**.
+2. **ApiPedido**: Contém a API desenvolvida em ASP.NET Core. A API ainda não foi completada.
+3. **PedidoAngular**: Contém o frontend desenvolvido em AngularJS. Não foi possível manipular o pedido de mudança de cor.
+
+## Tecnologias Utilizadas
+
+- **C#**: Linguagem utilizada para o backend da API.
+- **ASP.NET Core**: Framework para desenvolvimento da API.
+- **SQL Server**: Sistema de gerenciamento de banco de dados utilizado.
+- **Entity Framework Core**: Biblioteca ORM para integração com o banco de dados SQL Server.
+- **AngularJS**: Framework JavaScript utilizado para o desenvolvimento do frontend.
+- **SQL Server Management Studio (SSMS)**: Ferramenta utilizada para administração e manipulação do banco de dados SQL Server.
 
 ## Funcionalidades
+
+### Banco de Dados (SistemaPagamento)
+
+- **SQL Server**: Utiliza o **SQL Server** para armazenar dados do sistema.
+- **Scripts SQL**: Contém scripts SQL para criar as tabelas necessárias no banco de dados.
+- **Entity Framework Core**: Configurado para comunicação entre o banco de dados e a API via **Entity Framework Core**, que realiza o mapeamento objeto-relacional.
 
 ### API (ApiPedido)
 
@@ -23,8 +39,8 @@ O projeto está dividido em três partes principais:
   - [`Produto`](ApiPedido/Models/Produto.cs): Representa um produto com propriedades como `IdProduto`, `NomeProduto`, `Preco`, `Estoque`, e uma lista de `Pedidos`.
 
 - **Banco de Dados**:
-  - Utiliza SQL Server para armazenar dados.
-  - Configurado com Entity Framework Core para mapeamento objeto-relacional.
+  - Utiliza o **SQL Server** para armazenar dados.
+  - Configurado com **Entity Framework Core** para mapeamento objeto-relacional.
 
 ### Frontend (PedidoAngular)
 
@@ -36,9 +52,22 @@ O projeto está dividido em três partes principais:
 
 ## Configuração
 
-### API
+### Banco de Dados (SistemaPagamento)
+
+1. **Instalar SQL Server**:
+   Certifique-se de ter o **SQL Server** instalado e configurado corretamente.
+   
+2. **Criar Banco de Dados**:
+   Utilize o **SQL Server Management Studio (SSMS)** para rodar os scripts SQL incluídos no repositório para criar as tabelas e o banco de dados.
+
+3. **Configuração de Conexão**:
+   Após configurar o banco de dados, altere a string de conexão no arquivo `appsettings.json` da API para refletir a configuração do seu servidor SQL.
+
+### API (ApiPedido)
 
 1. **Instalar Dependências**:
+   Após clonar o repositório, instale as dependências da API com os seguintes comandos:
+
    ```sh
    dotnet restore
    dotnet build
